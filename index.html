@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<style type="text/css">
+			html, body{
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
+			}
+			#container{
+				height: 100%;
+				width: 100%;	
+				display: flex;
+				flex-direction: row;
+			}
+			.item{
+				height: 90%;
+				width: 50%;
+				border: 1px solid black;
+				margin: 0px;
+				padding: 10px;
+				overflow-y: scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="item">
+				Target String:
+				<input type="text" name="target" id="target">
+				<br>
+				<button onclick="genetic_algo()">Generate</button><br><br>
+				<div id="generation"></div><br>
+				<div id="fitness"></div><br>
+				<div id="mutation"></div><br>
+			</div>
+			<div id="strings" class="item"></div>
+		</div>
+	</body>
+	<script src="inner_working.js"></script>
+	<script src="genetic_algo.js"></script>
+</html

@@ -1,4 +1,4 @@
-# TargetStringGenerator
+# Target String Generator
 Target string generator using Genetic Algorithm
 
 
